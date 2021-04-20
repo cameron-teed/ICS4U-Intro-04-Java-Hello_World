@@ -1,9 +1,23 @@
+package ca.mths.intro.intro_04.java.hello_world;
 /**
- * Class helloworld.
- */
- public class helloworld {
-   public static void main(String[] args) {
-     System.out.println("Hello, World!!");
-     
-   }
+* The Hello World! program implements an application that
+* simply displays "Hello World!" to the standard output.
+*
+* @author  Cameron Teed
+* @version 1.0
+* @since   2020-04-20
+*/
+final class HelloWorld {
+  private HelloWorld() {
+      // Prevent instantiation
+      // Optional: throw an exception e.g. AssertionError
+      // if this ever *is* called
+  }
+  /**
+  * This method prints out "Hello, World!".
+  * @param args
+  */
+  public static void main(final String[] args) {
+        System.out.println("Hello, World!");
+  }
 }
