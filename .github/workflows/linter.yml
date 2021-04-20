@@ -1,5 +1,5 @@
 
-
+name: Github's Super Linter
  
 on:
 
@@ -21,6 +21,7 @@ jobs:
     steps:
  
       - uses: actions/checkout@v2
+      - name: Run GitHub Super Linter
         uses: github/super-linter@v3.15.5
         env:
               VALIDATE_ALL_CODEBASE: true
