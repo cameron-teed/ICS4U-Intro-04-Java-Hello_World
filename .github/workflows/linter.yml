@@ -5,8 +5,6 @@
 ###########################
 ###########################
 name: Lint Code Base
-- name: Super-Linter
-  uses: github/super-linter@v3.15.5
 #
 # Documentation:
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions
@@ -48,8 +46,8 @@ jobs:
       ################################
       # Run Linter against code base #
       ################################
-      - name: Lint Code Base
-        uses: github/super-linter@v3
+      - name: Super-Linter
+        uses: github/super-linter@v3.15.5
         env:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
